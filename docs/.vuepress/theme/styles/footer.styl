@@ -1,0 +1,55 @@
+.app-footer {
+    margin-top: 172px;
+    padding-top: 24px
+}
+
+.footer-copyright {
+    color: white; font-size: 12px;
+}
+
+.footer-background {
+    width: 100%;
+    height: 340px;
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+.footer-social-text {
+    font-size: 14px; color: white
+}
+
+
+.media-effect:before {
+    color: white;
+    display: inline-block;
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.2s;
+    margin-left: 10px;
+    content: "[";
+    transform: translateX(10px);
+}
+
+.media-effect:after {
+    color: white;
+    display: inline-block;
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.2s;
+    margin-right: 10px;
+    content: "]";
+    transform: translateX(-10px);
+}
+
+.media-effect:active:before,
+.media-effect:focus:before,
+.media-effect:hover:before {
+    opacity: 1;
+    transform: translateX(-10px);
+}
+
+.media-effect:active:after,
+.media-effect:focus:after,
+.media-effect:hover:after {
+    opacity: 1;
+    transform: translateX(10px);
+}
