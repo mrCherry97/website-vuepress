@@ -7,7 +7,6 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "docs:serve": "vuepress serve docs",
-    "generate-titles": "node titleGenerator.js",
     "dev:watch": "nodemon --ext md,vue,js --watch .vuepress --watch . --exec vuepress dev docs"
   },
   "repository": {
