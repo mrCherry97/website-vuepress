@@ -1,7 +1,7 @@
 name: FIREBASE PR PREVIEW
 
 on:
-  pull_request:
+  pull_request_target:
 
 jobs:
   build_and_preview:
@@ -12,11 +12,13 @@ jobs:
 
       - name: Installing project dependencies
         run: npm install
+
       - name: Building the project
         run: npm run docs:build
+        
       - name: Deploying on Firebase
-      - uses: w9jds/firebase-action@master
-        with:
-          args: hosting:channel:deploy PR-${{ github.event.number }}
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        uses: w9jds/firebase-action@master
+        with:
+          args: hosting:channel:deploy PR-${{ github.event.number }}
