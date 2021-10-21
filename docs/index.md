@@ -2,7 +2,7 @@
 title: Overview
 ---
 
-Kyma is an application runtime that provides you a flexible and easy way to connect, extend, and customize your applications in the cloud-native world of Kubernetes.
+Kyma /kee-ma/ is a cloud-native application runtime that combines the power of Kubernetes with a set of best-in-class tools and open-source components that empower you to develop, run, and operate secure and scalable cloud-native applications.
 
 ![overview](./guide/01-overview/assets/kyma-overview.svg)
 
