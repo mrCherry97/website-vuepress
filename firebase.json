@@ -1,6 +1,8 @@
 {
   "hosting": {
     "target": "prod",
+    "cleanUrls": true,
+    "trailingSlash": true,
     "public": "docs/.vuepress/dist",
     "ignore": [
       "firebase.json",
