@@ -1,0 +1,22 @@
+name: FIREBASE PR PREVIEW
+
+on:
+  pull_request:
+
+jobs:
+  build_and_preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@master
+
+      - name: Installing project dependencies
+        run: npm install
+      - name: Building the project
+        run: npm run docs:build
+      - name: Deploying on Firebase
+      - uses: w9jds/firebase-action@master
+        with:
+          args: hosting:channel:deploy PR-${{ github.event.number }}
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
