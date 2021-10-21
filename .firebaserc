@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "website-qwert"
+  },
+  "targets": {
+    "website-qwert": {
+      "hosting": {
+        "prod": [
+          "kyma-website-1"
+        ]
+      }
+    }
+  }
+}
