@@ -122,14 +122,3 @@ export default {
   },
 };
 </script>
-<style lang="stylus">
-@import './styles/index.styl';
-
-.isMobileMenu {
-  left: 0px;
-}
-
-.isMobileBtn {
-  left: 320px !important;
-}
-</style>
