@@ -8,6 +8,7 @@ const results = dirTree(path.join(__dirname, `../${folderName}`), {
 module.exports = {
   description:
     "Kyma is an open-source project designed natively on Kubernetes. It allows you to extend enterprise applications in a quick and modern way, using serverless computing or microservice architecture.",
+  theme: path.resolve(__dirname, "./theme"),
   head: [
     [
       "meta",

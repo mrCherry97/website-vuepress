@@ -11,8 +11,8 @@
         v-if="isFolder"
         :src="
           isOpen
-            ? require('@assets/arrow-up.svg')
-            : require('@assets/arrow-down.svg')
+            ? require('../../public/arrow-up.svg')
+            : require('../../public/arrow-down.svg')
         "
         style="margin-right: 5px"
         :width="isOpen ? 12 : 9"
@@ -152,7 +152,7 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
+<style lang="scss">
 .custom-sidebar {
   .item {
     margin-top: 10px;
