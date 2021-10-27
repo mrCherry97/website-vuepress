@@ -18,6 +18,7 @@ module.exports = {
     search: false,
     navbar: false,
     docs: results,
+    darkMode: false,
   },
   plugins: [
     [
@@ -50,12 +51,6 @@ module.exports = {
     ],
     ["tabs"],
     ["@vuepress/back-to-top"],
-    [
-      "@silvanite/tailwind",
-      {
-        purgecss: { enabled: false },
-      },
-    ],
   ],
   configureWebpack: {
     resolve: {
