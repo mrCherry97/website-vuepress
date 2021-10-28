@@ -5,7 +5,7 @@
       <!-- sidebar start -->
       <div class="xl:w-1/5 px-3 w-0">
         <div class="custom-sidebar">
-          <Sidebar />
+          <sidebar />
         </div>
       </div>
       <!-- sidebar end -->
@@ -22,13 +22,11 @@
 <script>
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
-import Sidebar from '../../plugins/sidebar/Sidebar.vue';
 
 export default {
   components: {
     Header,
     Footer,
-    Sidebar,
   },
 };
 </script>
