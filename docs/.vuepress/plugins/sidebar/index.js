@@ -1,7 +1,6 @@
-const { path } = require("@vuepress/shared-utils");
+const { path } = require('@vuepress/utils');
 
-module.exports = (options = {}, ctx) => {
-  return {
-    enhanceAppFiles: [path.resolve(__dirname, "enhanceAppFile.js")],
-  };
+const sidebarPlugin = {
+  clientAppEnhanceFiles: path.resolve(__dirname, './clientAppEnhance.js'),
 };
+module.exports = sidebarPlugin;

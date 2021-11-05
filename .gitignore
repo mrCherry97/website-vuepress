@@ -11,6 +11,8 @@ yarn-debug.log*
 yarn-error.log*
 /.changelog
 .npm/
+.temp
+.cache
 yarn.lock
 docs/.vuepress/dist
 .firebase

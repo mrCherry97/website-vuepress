@@ -25,20 +25,8 @@ The extensions and customizations you create are decoupled from your core applic
 
 ![advantages](./guide/01-overview/assets/kyma-advantages.svg)
 
-
-:::: tabs
-
-::: tab title
-The extensions and customizations you create are decoupled from your core applications, which adds to these general advantages of using Kyma
-:::
-
-
-::: tab javascript
-``` javascript
+```javascript
 () => {
-  console.log('Javascript code example')
-}
+  console.log('Javascript code example');
+};
 ```
-:::
-
-::::

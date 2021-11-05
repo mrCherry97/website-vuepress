@@ -1,27 +1,24 @@
 <template>
-  <SidebarItem :pages="pages" :item="item" />
+  <div v-for="route in htmlRoutes" :key="route.path">
+    <p @click="router.push(route.path)">{{ route.meta.title }}</p>
+  </div>
 </template>
 
 <script>
-import SidebarItem from "./SidebarItem";
-
 export default {
-  name: "sidebar",
-  components: {
-    SidebarItem,
-  },
+  name: 'sidebar',
   props: {
-    item: Object,
-    pages: Array,
+    router: Object,
   },
-  data() {
-    return {};
+  setup(props) {
+    const htmlRoutes = props.router
+      .getRoutes()
+      .filter(route => /html$/.test(route.path));
+    return {
+      htmlRoutes,
+    };
   },
-  computed: {},
-  created() {},
-  destroyed() {},
-  methods: {},
 };
 </script>
 
-<style lang="stylus" scoped></style>
+<style></style>
