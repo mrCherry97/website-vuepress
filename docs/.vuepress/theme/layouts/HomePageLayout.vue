@@ -1,18 +1,18 @@
 <template>
   <Header />
-  <Hello />
+  <HomePage />
   <Footer />
 </template>
 
 <script>
 import Header from './HomePage/Header.vue';
-import Hello from './HomePage/HelloWorld.vue';
+import HomePage from './HomePage/HomePage.vue';
 import Footer from './Footer/Footer.vue';
 
 export default {
   components: {
     Header,
-    Hello,
+    HomePage,
     Footer,
   },
 };
