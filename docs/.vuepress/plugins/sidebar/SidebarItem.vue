@@ -1,12 +1,6 @@
 <template>
-  <ul
-    v-if="newItem.name !== 'README.md' && newItem.name !== 'assets' && newItem"
-  >
-    <li
-      v-if="newItem.name !== folderName"
-      :class="{ bold: isFolder }"
-      @click="toggleFolder"
-    >
+  <ul v-if="newItem.name !== 'README.md' && newItem.name !== 'assets' && newItem">
+    <li v-if="newItem.name !== folderName" :class="{ bold: isFolder }" @click="toggleFolder">
       <img
         v-if="isFolder"
         style="margin-right: 5px"
@@ -23,7 +17,7 @@
           normal: !containsURL(),
         }"
       >
-        {{ getPathName}}
+        {{ getPathName }}
       </a>
       <span
         v-else
@@ -36,13 +30,7 @@
       >
     </li>
     <div v-show="isOpen" v-if="isFolder">
-      <sidebaritem
-        class="item"
-        v-for="(child, index) in newItem.children"
-        :item="child"
-        :key="index"
-      >
-      </sidebaritem>
+      <sidebaritem class="item" v-for="(child, index) in newItem.children" :item="child" :key="index"> </sidebaritem>
     </div>
   </ul>
 </template>
@@ -75,22 +63,18 @@ export default {
       return this.newItem.children && this.newItem.children.length;
     },
     getPathName() {
-      const newPath = `${this.folderName}/${
-        this.newItem.path.split(`/${this.folderName}/`)[1]
-      }`;
+      const newPath = `${this.folderName}/${this.newItem.path.split(`/${this.folderName}/`)[1]}`;
       let newName = newPath.substr(newPath.lastIndexOf('/'));
       newName = newName.replace('.md', '');
       return newName;
     },
     getLink() {
       let hasReadme = false;
-      let link = `/${this.folderName}/${
-        this.newItem.path.split(`/${this.folderName}/`)[1]
-      }`;
+      let link = `/${this.folderName}/${this.newItem.path.split(`/${this.folderName}/`)[1]}`;
 
       this.newItem.children &&
         this.newItem.children.length > 0 &&
-        this.newItem.children.forEach(child => {
+        this.newItem.children.forEach((child) => {
           if (child.name === 'README.md') {
             hasReadme = true;
           }
@@ -111,9 +95,7 @@ export default {
       }
     },
     containsURL() {
-      return this.href !== ''
-        ? this.href.includes('/' + this.newItem.name)
-        : false;
+      return this.href !== '' ? this.href.includes('/' + this.newItem.name) : false;
     },
     // isItemSelected() {
     //   if (this.href === '') return false;

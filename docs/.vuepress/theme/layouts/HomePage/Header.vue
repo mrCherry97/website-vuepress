@@ -47,9 +47,9 @@
         <PopoverGroup as="nav" class="hidden lg:flex space-x-10">
           <Popover class="relative">
             <div :class="[' inline-flex items-center text-base font-medium ']">
-              <a href="#" class="m-0 text-lg font-medium text-white media-effect"> Docs </a>
-              <a href="#" class="m-0 text-lg font-medium text-white media-effect"> Blog </a>
-              <a href="#" class="m-0 text-lg font-medium text-white media-effect"> Community </a>
+              <router-link to="/docs" class="m-0 text-lg font-medium text-white media-effect"> Docs </router-link>
+              <router-link to="/blog" class="m-0 text-lg font-medium text-white media-effect"> Blog </router-link>
+              <router-link to="/community" class="m-0 text-lg font-medium text-white media-effect"> Community </router-link>
               <a href="#" class="hover:bg-gray-400 border-solid rounded-full hover:bg-opacity-25">
                 <svg
                   aria-hidden="true"
@@ -212,7 +212,6 @@ const recentPosts = [
   { id: 2, name: 'How to use search engine optimization to drive traffic to your site', href: '#' },
   { id: 3, name: 'Improve your customer experience', href: '#' },
 ];
-
 export default {
   components: {
     Popover,

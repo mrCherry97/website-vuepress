@@ -1,6 +1,6 @@
 <template>
   <Header />
-  <Hello msg="Welcome to Your Vue.js App" />
+  <Hello />
   <Footer />
 </template>
 
