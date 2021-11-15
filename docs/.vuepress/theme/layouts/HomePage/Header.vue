@@ -39,7 +39,6 @@
               focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500
             "
           >
-            <span class="sr-only">Open menu</span>
             <MenuIcon class="h-6 w-6" aria-hidden="true" />
           </PopoverButton>
         </div>
@@ -120,7 +119,6 @@
                     focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500
                   "
                 >
-                  <span class="sr-only">Close menu</span>
                   <XIcon class="h-6 w-6" aria-hidden="true" />
                 </PopoverButton>
               </div>
