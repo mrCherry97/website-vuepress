@@ -149,9 +149,9 @@
 
             <div class="mt-6">
               <nav class="grid gap-y-8 text-center">
-                <a href="#" class="m-0 text-lg font-medium"> Docs </a>
-                <a href="#" class="m-0 text-lg font-medium"> Blog </a>
-                <a href="#" class="m-0 text-lg font-medium"> Community </a>
+                <router-link to="/docs" class="m-0 text-lg font-medium"> Docs </router-link>
+                <router-link to="/blog" class="m-0 text-lg font-medium"> Blog </router-link>
+                <router-link to="/bommunity" class="m-0 text-lg font-medium"> Community </router-link>
                 <a href="#"> Slack </a>
               </nav>
             </div>
