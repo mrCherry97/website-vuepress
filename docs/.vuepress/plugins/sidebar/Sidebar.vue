@@ -1,7 +1,6 @@
 <template>
   <div v-for="route in htmlRoutes" :key="route.path">
     <router-link :to="route.path">{{ route.meta.title }}</router-link>
-    <!-- <p @click="router.push(route.path)">{{ route.meta.title }}</p> -->
   </div>
 </template>
 

@@ -48,14 +48,3 @@ export default {
   name: 'HomePage',
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-/* p {
-  margin-top: 180 px;
-  margin-bottom: 39 px;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 1.5;
-} */
-</style>

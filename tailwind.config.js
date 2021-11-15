@@ -6,8 +6,6 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fill: (theme) => ({
-      red: theme('colors.red.700'),
-      green: theme('colors.green.700'),
       blue: theme('colors.blue.700'),
     }),
     extend: {

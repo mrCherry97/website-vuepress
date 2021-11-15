@@ -47,9 +47,9 @@
         <PopoverGroup as="nav" class="hidden lg:flex space-x-10">
           <Popover class="relative">
             <div :class="[' inline-flex items-center text-base font-medium ']">
-              <router-link to="/docs" class="m-0 text-lg font-medium text-white media-effect"> Docs </router-link>
-              <router-link to="/blog" class="m-0 text-lg font-medium text-white media-effect"> Blog </router-link>
-              <router-link to="/community" class="m-0 text-lg font-medium text-white media-effect"> Community </router-link>
+              <router-link to="/docs" class="m-0 text-lg font-medium text-white media-effect">Docs</router-link>
+              <router-link to="/blog" class="m-0 text-lg font-medium text-white media-effect">Blog</router-link>
+              <router-link to="/community" class="m-0 text-lg font-medium text-white media-effect">Community</router-link>
               <a href="#" class="hover:bg-gray-400 border-solid rounded-full hover:bg-opacity-25">
                 <svg
                   aria-hidden="true"
@@ -149,9 +149,9 @@
 
             <div class="mt-6">
               <nav class="grid gap-y-8 text-center">
-                <router-link to="/docs" class="m-0 text-lg font-medium"> Docs </router-link>
-                <router-link to="/blog" class="m-0 text-lg font-medium"> Blog </router-link>
-                <router-link to="/bommunity" class="m-0 text-lg font-medium"> Community </router-link>
+                <router-link to="/docs" class="m-0 text-lg font-medium">Docs</router-link>
+                <router-link to="/blog" class="m-0 text-lg font-medium">Blog</router-link>
+                <router-link to="/bommunity" class="m-0 text-lg font-medium">Community</router-link>
                 <a href="#"> Slack </a>
               </nav>
             </div>
@@ -164,54 +164,9 @@
 
 <script>
 import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/vue';
-import {
-  BookmarkAltIcon,
-  CalendarIcon,
-  ChartBarIcon,
-  CursorClickIcon,
-  MenuIcon,
-  PhoneIcon,
-  PlayIcon,
-  RefreshIcon,
-  ShieldCheckIcon,
-  SupportIcon,
-  ViewGridIcon,
-  XIcon,
-} from '@heroicons/vue/outline';
+import { MenuIcon, XIcon } from '@heroicons/vue/outline';
 import { ChevronDownIcon } from '@heroicons/vue/solid';
 
-const solutions = [
-  {
-    name: 'Docs',
-    description: 'Documentation for Kyma.',
-    href: '#',
-  },
-  {
-    name: 'Blog',
-    description: 'Speak directly to your customers in a more meaningful way.',
-    href: '#',
-  },
-  {
-    name: 'Community',
-    description: "Connect with third-party tools that you're already using.",
-    href: '#',
-  },
-  {
-    name: 'Slack',
-    description: 'Build strategic funnels that will drive your customers to convert',
-    href: '#',
-  },
-];
-const callsToAction = [
-  { name: 'Watch Demo', href: '#', icon: PlayIcon },
-  { name: 'Contact Sales', href: '#', icon: PhoneIcon },
-];
-const resources = [];
-const recentPosts = [
-  { id: 1, name: 'Boost your conversion rate', href: '#' },
-  { id: 2, name: 'How to use search engine optimization to drive traffic to your site', href: '#' },
-  { id: 3, name: 'Improve your customer experience', href: '#' },
-];
 export default {
   components: {
     Popover,
@@ -221,14 +176,6 @@ export default {
     ChevronDownIcon,
     MenuIcon,
     XIcon,
-  },
-  setup() {
-    return {
-      solutions,
-      callsToAction,
-      resources,
-      recentPosts,
-    };
   },
 };
 </script>
